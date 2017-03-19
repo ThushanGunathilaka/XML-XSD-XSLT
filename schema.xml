@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3schools.com" xmlns="http://www.w3schools.com" elementFormDefault="qualified">
+	<xs:element name="room">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="surface" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="objects" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="object" minOccurs="1">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="intensity" minOccurs="0" maxOccurs="1">
+														<xs:complexType>
+															<xs:sequence>
+															</xs:sequence>
+															<xs:attribute name="measure" type="xs:string"></xs:attribute>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="id" type="xs:nonNegativeInteger"></xs:attribute>
+												<xs:attribute name="measure" type="xs:string" use="required"></xs:attribute>
+												<xs:attribute name="distance" type="xs:decimal" use="required"></xs:attribute>
+												<xs:attribute name="type" type="xs:string" use="required"></xs:attribute>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="paint" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+									</xs:sequence>
+									<xs:attribute name="hex_color" type="xs:string"></xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="type" type="xs:string" use="required"></xs:attribute>
+						<xs:attribute name="direction" type="xs:string" use="required"></xs:attribute>
+						<xs:attribute name="id" type="xs:string" use="required"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

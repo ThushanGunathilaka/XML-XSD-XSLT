@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<room>
+	<surface type="wall" direction="front" id="front_wall">
+		<objects>
+			<object id="1" distance="5" measure="m">camera</object>		
+		</objects>
+		<paint hex_color="#ddfdfs">pink</paint>
+	</surface>
+	<surface type="wall" direction="back" id="back_wall">
+		<objects>
+			<object id="1" distance="4.3" measure="m" type="banner">UNKNOWN</object>
+			<object id="2" distance="4.8" measure="m" type="banner">IBM</object>
+			<object id="3" distance="4.5" measure="m" type="banner">IBM</object>	
+		</objects>
+		<paint hex_color="#fff">white</paint>		
+	</surface>
+	<surface type="wall" direction="right" id="right_wall">
+		<objects>
+			<object id="1" distance="2.3" measure="m" type="window"></object>	
+			<object id="2" distance="2.2" measure="m" type="banner"></object>	
+			<object id="3" distance="2.2" measure="m" type="speaker"></object>			
+			<object id="4" distance="2.2" measure="m" type="speaker"></object>
+			<object id="5" distance="3.5" measure="m" type="speaker"></object>				
+		</objects>
+		<paint hex_color="#fff">white</paint>		
+	</surface>
+	<surface type="wall" direction="left" id="left_wall">
+		<objects>
+			<object id="1" distance="2" measure="m" type="speaker">SONY</object>
+			<object id="2" distance="2" measure="m" type="speaker">SONY</object>
+		</objects>
+		<paint hex_color="#fff">white</paint>		
+	</surface>
+	<surface type="roof" direction="up" id="up_roof">
+		<objects>
+			<object id="1" distance="2" measure="m" type="bulb"><intensity measure="W">20</intensity></object>
+			<object id="2" distance="2" measure="m" type="bulb"><intensity measure="W">20</intensity></object>
+			<object id="3" distance="2" measure="m" type="bulb"><intensity measure="W">20</intensity></object>
+			<object id="4" distance="2" measure="m" type="bulb"><intensity measure="W">20</intensity></object>
+			<object id="5" distance="2" measure="m" type="bulb"><intensity measure="W">20</intensity></object>
+			<object id="6" distance="2" measure="m" type="bulb"><intensity measure="W">20</intensity></object>
+			<object id="7" distance="2" measure="m" type="bulb"><intensity measure="W">20</intensity></object>
+			<object id="8" distance="2" measure="m" type="bulb"><intensity measure="W">20</intensity></object>
+		</objects>
+		<paint hex_color="#fff">white</paint>		
+	</surface>
+</room>
+
+
